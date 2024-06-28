@@ -1,0 +1,183 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: url('bg-1.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+header .display-4 {
+    animation: fadeInDown 2s;
+}
+
+header .lead {
+    animation: fadeInUp 2s;
+}
+
+header .btn {
+    animation: fadeIn 2s;
+}
+
+#usps h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.testimonial {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.customer {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.fixed-height-img {
+    height: 200px; /* Set the desired height */
+    width: 100%; /* Ensure it fills the width of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.zoom-effect:hover .fixed-height-img {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+/* Testimonial Section Styling */
+#testimonials {
+    background-color: #F5F5DC; /* Light blue background */
+    padding-top: 80px; /* Adjust top padding as needed */
+    padding-bottom: 80px; /* Adjust bottom padding as needed */
+}
+
+.testimonial {
+    font-size: 1.2em; /* Larger font size for testimonials */
+    font-style: italic; /* Italics for testimonial text */
+    margin-bottom: 10px;
+}
+
+.customer {
+    font-weight: bold; /* Bold font for customer name */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Adjust width as needed */
+    color: #ffffff; /* White color for carousel arrows */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for arrows */
+    border-radius: 50%; /* Rounded shape for arrows */
+    padding: 10px; /* Adjust padding as needed */
+    margin-top: -30px; /* Position arrows closer to testimonials */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Transparent background for arrow icons */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.carousel-inner {
+    border-radius: 10px; /* Rounded corners for carousel items */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+.carousel-item {
+    padding: 20px; /* Padding inside carousel items */
+}
+
+.carousel-item.active {
+    background-color: #ffffff; /* White background for active carousel item */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Shadow effect for active item */
+}
+
+
+/* USP Box Styling */
+.usp-box {
+   
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* Lighter background color */
+    color: #333333; /* Dark font color */
+    padding: 20px;
+   
+}
+
+.usp-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* USP Heading Styling */
+.usp-heading {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* USP Box Styling for Special Offers Section */
+#special-offers .usp-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* Lighter background color */
+    color: #333333; /* Dark font color */
+    padding: 20px;
+}
+
+#special-offers .usp-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* USP Heading Styling */
+#special-offers .usp-heading {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

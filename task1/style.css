@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    color: #666;;
+
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(b2.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    width:140px;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    color: #080808;
+    text-decoration: none;
+    font-size:18px;
+    position: relative;
+}
+
+nav ul li a:hover{
+    background-color: #5e17eb;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.htext{
+    margin-top: 7%;
+    font-size :32px;
+    font-weight: bold;
+    
+}
+
+span{
+    color:#5e17eb;
+}
+.htext h1{
+    font-size:26px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding:20px 20px;
+    color:#fff;
+    background-color: #5e17eb;
+    font-size:18px;
+    border: none;
+    width:140px;
+}
+
+#about {
+    padding: 80px 0;
+    color: #666;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.abouti {
+    flex-basis: 35%;
+}
+
+.abouti img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.aboutt {
+    flex-basis: 60%;
+}
+
+.stitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5e17eb;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #5e17eb;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+#services {
+    padding: 30px 0;
+}
+
+.slist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.slist div {
+    background: #fff;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slist div:hover {
+    transform: translateY(-5px);
+}
+
+.slist div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #5e17eb;
+}
+
+.slist div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.slist div p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.slist div a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5e17eb;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.slist div a:hover {
+    background-color: #5e17eb;
+}
+
+#portfolio {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.wlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work:hover {
+    transform: translateY(-5px);
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(94, 23, 235, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.work:hover .layer {
+    transform: translateY(0);
+}
+
+.layer h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.layer p {
+    font-size: 14px;
+}
+
+.layer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.layer a:hover {
+    background-color: #5e17eb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5e17eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5e17eb;
+}
+
+.btn.btn2 {
+    background-color: #333;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border:1px solid #5e17eb;
+    padding: 14px 50px;
+    border-radius:6px;
+    text-decoration: none;
+    color:white;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #5e17eb;
+}
+.cleft{
+    flex-basis:35%;
+}
+
+.cright{
+    flex-basis: 60%;
+}
+
+.cleft p{
+    margin-top:30px;
+}
+
+.cleft p i{
+    color:#5e17eb;
+    margin-right: 15px;
+    font-size:25px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size:30px;
+    margin-top: 25px;
+    margin-right:15px;
+    color:#ababab;
+    display:inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color:#5e17eb;
+    transform: translateY(-5px);
+
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #5e17eb;
+}
+
+.cright form{
+    width:100%;
+}
+
+form input,form textarea{
+    width:100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0;
+    color:#fff;
+    font-size:18px;
+    border-radius: 6px;
+}
+
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor:pointer;
+
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding:20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+}
+

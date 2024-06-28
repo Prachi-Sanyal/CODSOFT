@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Discover Your Next Adventure</h1>
+        <p class="lead">Explore the World with Us</p>
+        <a href="#booking" class="btn btn-primary btn-lg">Plan Your Trip</a>
+    </header>
+<!-- Popular Destinations Section -->
+<section id="destinations" class="container py-5">
+    <h2 class="text-center mb-4">Popular Destinations</h2>
+    <div id="destinationCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4 mb-4 zoom-effect">
+                        <img src="bali.jpg" alt="Bali, Indonesia" class="img-fluid fixed-height-img">
+                        <h3 class="mt-2">Bali, Indonesia</h3>
+                        <p>Bali is a tropical paradise known for its lush green rice terraces, pristine beaches, and vibrant culture. Key attractions include the stunning beaches of Nusa Dua, the terraced rice fields of Ubud, and the majestic Mount Agung.</p>
+                    </div>
+                    <div class="col-md-4 mb-4 zoom-effect">
+                        <img src="d2.jpg" alt="Banff National Park, Canada" class="img-fluid fixed-height-img">
+                        <h3 class="mt-2">Banff National Park, Canada</h3>
+                        <p>Located in the heart of the Canadian Rockies, Banff National Park is renowned for its stunning mountain scenery, crystal-clear lakes, and abundant wildlife. Highlights include Lake Louise, Moraine Lake, and the Banff Gondola.</p>
+                    </div>
+                    <div class="col-md-4 mb-4 zoom-effect">
+                        <img src="d3.jpg" alt="Amalfi Coast, Italy" class="img-fluid fixed-height-img">
+                        <h3 class="mt-2">Amalfi Coast, Italy</h3>
+                        <p>The Amalfi Coast is famous for its breathtaking coastal scenery, charming villages, and crystal-clear blue waters. Key attractions include the picturesque town of Positano, the historic Amalfi, and the scenic drive along the coastline.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items here for additional sets of destinations -->
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- Unique Selling Points Section -->
+<section id="usps" class="py-5" style="background-color: #A2C8E3;">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="usp-box text-center p-4 mb-4">
+                    <h3 class="usp-heading">Best Deals</h3>
+                    <p>Get the best travel deals and discounts.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="usp-box text-center p-4 mb-4">
+                    <h3 class="usp-heading">Exclusive Packages</h3>
+                    <p>Enjoy exclusive travel packages and experiences.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="usp-box text-center p-4 mb-4">
+                    <h3 class="usp-heading">Expert Guides</h3>
+                    <p>Travel with our expert guides and enjoy a hassle-free trip.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container py-5">
+        <h2 class="text-center mb-4">Customer Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="testimonial">"This was the best trip of my life!"</p>
+                    <p class="customer">- John Doe</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="testimonial">"Amazing experience and great service."</p>
+                    <p class="customer">- Jane Smith</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="testimonial">"I will definitely travel with them again."</p>
+                    <p class="customer">- Michael Johnson</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+<section id="special-offers" class="py-5" style="background-color: #A2C8E3;">
+    <div class="container">
+        <h2 class="text-center mb-4">Special Offers</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="usp-box text-center p-4 mb-4">
+                    <h3 class="usp-heading">Limited Time Deal</h3>
+                    <p>Get 20% off on all bookings made this month!</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="usp-box text-center p-4 mb-4">
+                    <h3 class="usp-heading">Exclusive Discount</h3>
+                    <p>Book now and get a complimentary city tour.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Booking Section -->
+    <section id="booking" class="container py-5">
+        <h2 class="text-center mb-4">Book Your Trip</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="destination">Destination</label>
+                    <select id="destination" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Destination 1</option>
+                        <option>Destination 2</option>
+                        <option>Destination 3</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="dates">Dates</label>
+                    <input type="text" class="form-control" id="dates" placeholder="Your Travel Dates">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>Contact Us: travelwander@example.com | +123 456 7890</p>
+            <p>&copy; 2024 Travel Wander. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
